@@ -1,0 +1,93 @@
+
+# ==============================
+# Environment & Secrets
+# ==============================
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+
+# ==============================
+# Testing & Coverage
+# ==============================
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ==============================
+# Jupyter Notebook
+# ==============================
+.ipynb_checkpoints/
+
+# ==============================
+# Machine Learning Models
+# ==============================
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+
+# ==============================
+# ML Experiment Tracking
+# ==============================
+mlruns/
+wandb/
+runs/
+
+# ==============================
+# Data Files
+# ==============================
+# Ignore temporary/generated data, but keep folder structure
+ml/data/raw/*
+ml/data/processed/*
+ml/data/external/*
+
+!ml/data/raw/.gitkeep
+!ml/data/processed/.gitkeep
+!ml/data/external/.gitkeep
+
+# ==============================
+# Frontend / Node
+# ==============================
+node_modules/
+dist/
+build/
+.npm/
+npm-debug.log*
+
+# ==============================
+# IDE & Editor
+# ==============================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==============================
+# Logs
+# ==============================
+*.log
+logs/
+
+# ==============================
+# Operating System
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
