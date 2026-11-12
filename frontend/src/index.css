@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans text-soil bg-mist antialiased;
+  /* faint furrow lines, like rows seen from a drone */
+  background-image: repeating-linear-gradient(100deg, transparent 0 46px, rgba(94, 155, 58, 0.07) 46px 48px);
+}
+h1, h2, h3 { @apply font-display text-monsoon; }
+input[type='range'] { @apply w-full accent-pod; }
+:focus-visible { outline: 3px solid #5E9B3A; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+.hero { background: radial-gradient(circle at 85% 20%, rgba(232,212,155,.55) 0, rgba(232,212,155,0) 22%), linear-gradient(160deg, #0f2a3b 0%, #1E3A4C 50%, #2f6b4a 100%); }
+.rain { position: absolute; inset: 0; opacity: .35; background-image: repeating-linear-gradient(105deg, transparent 0 18px, rgba(255,255,255,.35) 18px 19px); background-size: 120px 120px; animation: fall 1.6s linear infinite; }
+@keyframes fall { to { background-position: -40px 120px; } }
+
+.card { @apply rounded-3xl bg-white/90 p-6 shadow-lg ring-1 ring-monsoon/10 backdrop-blur-md transition-shadow duration-200 hover:shadow-2xl; }
+select, input[type='number'] { @apply text-soil; }
+
+.hero { background-size: 100% 100%, 220% 220%; animation: shift 18s ease infinite; }
+@keyframes shift { 0%, 100% { background-position: 0 0, 0% 50%; } 50% { background-position: 0 0, 100% 50%; } }

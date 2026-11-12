@@ -1,0 +1,108 @@
+{
+  "features": [
+    "district_name",
+    "total_rainfall_mm",
+    "avg_max_temp_c",
+    "avg_min_temp_c",
+    "heat_stress_days"
+  ],
+  "cat_features": [
+    "district_name"
+  ],
+  "stage_features": [],
+  "best_params": {
+    "depth": 8,
+    "learning_rate": 0.08,
+    "l2_leaf_reg": 9
+  },
+  "cv_rmse": 0.5433226428751363,
+  "test_metrics": {
+    "r2": 0.21838418261275494,
+    "rmse": 0.5759770486252515,
+    "mae": 0.45999955288153677
+  },
+  "ablation": {
+    "with_area": {
+      "r2": 0.36118832020250313,
+      "rmse": 0.5207088180300771,
+      "mae": 0.43810378646168185
+    },
+    "without_area": {
+      "r2": 0.21838418261275494,
+      "rmse": 0.5759770486252515,
+      "mae": 0.45999955288153677
+    }
+  },
+  "interval": {
+    "low_q": 0.1,
+    "high_q": 0.9,
+    "low_offset": -0.6172462063910609,
+    "high_offset": 0.7699162759462939,
+    "test_coverage": 0.6875
+  },
+  "soil_check": {
+    "soil_in_data": false,
+    "districts_with_single_soil_share": null,
+    "soil_informative": false,
+    "soil_values": []
+  },
+  "reference_years": [
+    2010,
+    2011,
+    2012,
+    2013,
+    2014
+  ],
+  "reference_yields": {
+    "Ahmednagar": 0.617,
+    "Akola": 1.082,
+    "Amravati": 1.469,
+    "Aurangabad": 1.104,
+    "Beed": 1.283,
+    "Buldhana": 1.37,
+    "Chandrapur": 0.854,
+    "Dhule": 1.619,
+    "Hingoli": 1.167,
+    "Jalgaon": 1.728,
+    "Jalna": 1.591,
+    "Kolhapur": 2.498,
+    "Latur": 1.934,
+    "Nagpur": 0.807,
+    "Nanded": 0.953,
+    "Nashik": 1.411,
+    "Yavatmal": 0.319
+  },
+  "global_reference": 1.3809428889449888,
+  "stage_medians": {},
+  "stage_global_median": {},
+  "districts": [
+    "Ahmednagar",
+    "Akola",
+    "Amravati",
+    "Aurangabad",
+    "Beed",
+    "Buldhana",
+    "Chandrapur",
+    "Dhule",
+    "Hingoli",
+    "Jalgaon",
+    "Jalna",
+    "Kolhapur",
+    "Latur",
+    "Nagpur",
+    "Nanded",
+    "Nashik",
+    "Osmanabad",
+    "Yavatmal"
+  ],
+  "soils": [],
+  "n_rows": 161,
+  "train_years": [
+    2000,
+    2011
+  ],
+  "test_years": [
+    2012,
+    2014
+  ]
+}
